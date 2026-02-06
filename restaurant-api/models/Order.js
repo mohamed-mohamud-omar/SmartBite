@@ -1,5 +1,6 @@
 /**
  * INTEGRATION & LOGIC - MEMBER 5 (maryamaruun847@gmail.com)
+ * JIRA ID: KAN-7
  * 
  * TASK: Implement the Order Schema.
  * Fields: items (ref Food), total_amount, status, user (ref User).

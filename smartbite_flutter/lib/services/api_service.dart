@@ -1,5 +1,6 @@
 /**
  * INTEGRATION & LOGIC - MEMBER 5 (maryamaruun847@gmail.com)
+ * JIRA ID: KAN-7
  * 
  * TASKS:
  * 1. Implement API calls for Login and Register.

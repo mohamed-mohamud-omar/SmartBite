@@ -1,5 +1,6 @@
 /**
  * SECURITY - MEMBER 2 (Ismailbiid46@gmail.com)
+ * JIRA ID: KAN-4
  * 
  * TASKS:
  * 1. Implement User Registration logic.

@@ -1,5 +1,6 @@
 /**
  * SECURITY - MEMBER 2 (Ismailbiid46@gmail.com)
+ * JIRA ID: KAN-4
  * 
  * TASK: Implement the User Schema.
  * Fields: name, email, password, role.

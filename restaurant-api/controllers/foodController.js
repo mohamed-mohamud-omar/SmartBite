@@ -1,5 +1,6 @@
 /**
  * MENU CRUD - MEMBER 3 (zaadaqzomalia@gmail.com)
+ * JIRA ID: KAN-5
  * 
  * TASKS:
  * 1. Implement GET all food items.

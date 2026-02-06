@@ -1,5 +1,6 @@
 /**
  * INTEGRATION & LOGIC - MEMBER 5 (maryamaruun847@gmail.com)
+ * JIRA ID: KAN-7
  * 
  * TASK: Implement the Food Model class.
  * Include fields: id, title, price, description, category, imageUrl.
