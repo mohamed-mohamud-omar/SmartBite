@@ -1,23 +1,17 @@
+/**
+ * MENU CRUD - MEMBER 3 (zaadaqzomalia@gmail.com)
+ * 
+ * TASK: Define food (menu) routes.
+ * Routes: GET /, GET /:id, POST /, PUT /:id, DELETE /:id.
+ * Tip: Protect write routes with auth and admin middleware.
+ */
+
 const express = require('express');
-const {
-    getFoods,
-    getFood,
-    createFood,
-    updateFood,
-    deleteFood
-} = require('../controllers/foodController');
-
-const { protect, authorize } = require('../middleware/authMiddleware');
-
 const router = express.Router();
+const { getFoods } = require('../controllers/foodController');
 
-router.route('/')
-    .get(getFoods)
-    .post(protect, authorize('Admin'), createFood);
+router.get('/', getFoods);
 
-router.route('/:id')
-    .get(getFood)
-    .put(protect, authorize('Admin'), updateFood)
-    .delete(protect, authorize('Admin'), deleteFood);
+// TODO: Member 3 - Add other CRUD routes
 
 module.exports = router;

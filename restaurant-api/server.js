@@ -1,45 +1,32 @@
+/**
+ * BACKEND SETUP - MEMBER 1 (mohacarab162@gmail.com)
+ * 
+ * TASKS:
+ * 1. Initialize Node.js/Express server.
+ * 2. Setup MongoDB connection using Mongoose.
+ * 3. Configure environment variables (dotenv).
+ * 4. Mount routers for Auth, Food, and Orders.
+ */
+
 const express = require('express');
 const dotenv = require('dotenv');
-const cors = require('cors');
-const connectDB = require('./config/db');
-const errorHandler = require('./middleware/errorMiddleware');
+// const connectDB = require('./config/db'); // TODO: Member 1 - Implement this
 
 // Load env vars
 dotenv.config();
-
-// Connect to database
-connectDB();
-
-// Route files
-const auth = require('./routes/authRoutes');
-const food = require('./routes/foodRoutes');
-const orders = require('./routes/orderRoutes');
 
 const app = express();
 
 // Body parser
 app.use(express.json());
 
-// Enable CORS
-app.use(cors());
+// TODO: Member 1 - Connect to Database
+// connectDB();
 
-// Mount routers
-app.use('/api/auth', auth);
-app.use('/api/food', food);
-app.use('/api/orders', orders);
-
-app.use(errorHandler);
+// TODO: Member 1 - Mount Routers (Auth, Food, Orders)
 
 const PORT = process.env.PORT || 5000;
 
-const server = app.listen(
-    PORT,
-    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
-);
-
-// Handle unhandled promise rejections
-process.on('unhandledRejection', (err, promise) => {
-    console.log(`Error: ${err.message}`);
-    // Close server & exit process
-    server.close(() => process.exit(1));
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });

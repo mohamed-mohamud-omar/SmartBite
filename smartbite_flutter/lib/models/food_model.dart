@@ -1,28 +1,11 @@
+/**
+ * INTEGRATION & LOGIC - MEMBER 5 (maryamaruun847@gmail.com)
+ * 
+ * TASK: Implement the Food Model class.
+ * Include fields: id, title, price, description, category, imageUrl.
+ * Add fromJson and toJson methods.
+ */
+
 class Food {
-  final String id;
-  final String title;
-  final double price;
-  final String description;
-  final String category;
-  final String imageUrl;
-
-  Food({
-    required this.id,
-    required this.title,
-    required this.price,
-    required this.description,
-    required this.category,
-    required this.imageUrl,
-  });
-
-  factory Food.fromJson(Map<String, dynamic> json) {
-    return Food(
-      id: json['_id'],
-      title: json['title'],
-      price: (json['price'] as num).toDouble(),
-      description: json['description'],
-      category: json['category'],
-      imageUrl: json['image_url'],
-    );
-  }
+  // TODO: Member 5 - Define Food model class
 }
